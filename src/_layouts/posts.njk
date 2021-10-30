@@ -5,7 +5,7 @@ layout: base.njk
 
 <div class="container posts">
   <div class="col-sm-8">
-  {%- for post in collections.myPosts -%}
+  {%- for post in collections.myPosts | reverse -%}
     <div class="post">
       <div class="post-header"> 
         <h2 class="post-title" >
