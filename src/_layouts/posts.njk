@@ -11,9 +11,11 @@ layout: base.njk
           <a href="{{ post.url | url }}" >{{ post.data.title }}</a>
         </h2> 
       </div>
-	  <div class="post-preview">
-		  {{ post.data.content | safe | truncate(300) }}
-	  </div>
+    {% if post.data.preview %}
+      <div class="post-preview">
+        {{ post.data.content | safe | truncate(300) }}
+      </div>
+    {% endif %}	  
 	    <div class="post-footer">
 			<span class="date">
                 <a class="fa fa-calendar"></a>
