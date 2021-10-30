@@ -1,0 +1,17 @@
+{
+  "name": "jd-ssg",
+  "version": "1.0.0",
+  "description": "Jaydeep Godara profolio ",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx @11ty/eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "@sindresorhus/slugify": "^2.1.0"
+  }
+}

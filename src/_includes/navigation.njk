@@ -1,0 +1,15 @@
+<div class="pb-5">
+{{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+    listElement: "ul",           
+    listItemElement: "li",       
+
+    listClass: "nav nav-pills justify-content-center",                
+    listItemClass: "nav-item",          
+    listItemHasChildrenClass: "", 
+    activeListItemClass: "",     
+
+    anchorClass: "nav-link",              
+    activeAnchorClass: "active",        
+    activeKey: eleventyNavigation.key
+    }) |   safe  }}
+</div>

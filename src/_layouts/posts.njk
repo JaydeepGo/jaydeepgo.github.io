@@ -1,0 +1,34 @@
+---
+title: My Rad Blog
+layout: base.njk
+---
+
+<div class="container posts">
+  <div class="col-sm-8">
+  {%- for post in collections.myPosts -%}
+    <div class="post">
+      <div class="post-header"> 
+        <h2 class="post-title" >
+          <a href="{{ post.url | url }}" >{{ post.data.title }}</a>
+        </h2> 
+      </div>
+	  <div class="post-preview">
+		  {{ post.data.content | safe | truncate(300) }}
+	  </div>
+	    <div class="post-footer">
+			<span class="date">
+                <a class="fa fa-calendar"></a>
+                <snap class="date"> {{ post.date.toUTCString() }} </snap>
+    		</span>
+         <span class="date">
+                <a class="fa fa-tag"></a>
+                {%- for tag in post.data.tags -%}
+                    <a href="">{{ tag }}</a>{% if not loop.last %},
+                    {% endif %}
+                {%- endfor -%}
+    		</span>
+	  	</div>
+    </div>
+  {%- endfor -%}
+  <div>
+</div>
