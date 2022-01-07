@@ -1,6 +1,7 @@
 module.exports = function() {
     return {
         "title" : "Jaydeep Godara",
-        "author" : "JaydeepGo"
+        "author" : "JaydeepGo",
+        "url" : "https://jaydeepgo.github.io"
     };
 };
