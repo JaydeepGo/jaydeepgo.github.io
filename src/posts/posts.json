@@ -1,6 +1,0 @@
-{
-    "layout": "post",
-    "tags": "post",
-    "permalink": "posts/{{ title | slug }}/",
-    "preview": true
-}

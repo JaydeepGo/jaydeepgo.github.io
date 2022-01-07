@@ -1,8 +1,9 @@
 ---
 layout: about.njk
-title: About
 eleventyNavigation:
   key: About
+eleventyComputed:
+  title: "{{ site.title }}"
 ---
 Hi, I'm Jaydeep Godara.
 

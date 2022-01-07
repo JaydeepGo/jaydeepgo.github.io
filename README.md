@@ -9,9 +9,10 @@ This project includes
 # Deploy instructions
 - Install npm packges
     `npm install --save-dev`
-- Build initial site build.
+- Start initial site build.
     `npx @11ty/eleventy --serve`
-- Build generates site at `/docs`.
-
+- The site generates at `/docs`.
+  
 # References
-- 
+- https://github.com/siakaramalegos/sia.codes-eleventy
+- https://github.com/nhoizey/pack11ty
