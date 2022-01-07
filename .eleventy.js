@@ -1,6 +1,12 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const filters = require("./src/_11ty/filters");
 
 module.exports = function(eleventyConfig) {
+
+    Object.keys(filters).forEach(filterName => {
+      eleventyConfig.addFilter(filterName, filters[filterName])
+    })
+
     eleventyConfig.setDataDeepMerge(true);
 
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -11,7 +17,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection("tagList", require("./src/_11ty/getTagList"));
 
     return {
-      //pathPrefix: "/sitePrefix/",
+      pathPrefix: "/",
       dir: {
         input: 'src',
         output: 'docs',

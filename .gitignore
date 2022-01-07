@@ -1,1 +1,6 @@
+# node app modules
 node_modules
+
+
+# secret data
+.evn 
