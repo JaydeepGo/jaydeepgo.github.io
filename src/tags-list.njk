@@ -1,0 +1,18 @@
+---
+layout: base.njk
+title: All topic tags for writing by Sia
+description: See all the topics Sia Karamalegos writes about on this tag list. Sia is a freelance performance engineer and web developer available for contract consulting and content development.
+permalink: /tags/
+---
+
+<div class="content">
+  <section class="flow">
+    <h1>Tags</h1>
+    <p>See more writing by topic area:</p>
+
+    {% for tag in collections.tagList %}
+      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+    {% endfor %}
+  </section>
+</div>
