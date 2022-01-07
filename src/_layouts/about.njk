@@ -1,12 +1,12 @@
 ---
-title: Jaydeep Godara
 layout: base.njk
+eleventyComputed:
+  title: "{{ site.title }}"
 ---
-
 <div class="container profile">
   <div class="row">
       <div class="col-sm-3 picture"> 
-        <img src="{{ 'images/pc.jpg' | url }}" alt=""> 
+        <img src="{{ '/images/pc.jpg' | url }}" alt=""> 
       </div>
       <div class="col-sm-9 about"> 
         {{ content | safe }}        

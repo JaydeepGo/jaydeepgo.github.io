@@ -1,9 +1,18 @@
 ---
 layout: base.njk
 ---
+{% set readTime = content | wordcount/180 %}
 
-<div class="container posts">
-  <div class="col-sm-8">
+<div class="container post">
+ 
+      <span>Written by</span>
+    {% if author %}
+        {{ author }}
+    {% endif %}
+    <p class="meta">on {{ date.toDateString() }} </p>
+    
+    <h1 class="postTitle">{{ title }}</h1>
+    <div class="post-line"></div>  
+    <div class="read-time"> {{ readTime | round(0, "ceil") }} Minute Read </div>
     {{ content | safe }}
-  <div>
 </div>
