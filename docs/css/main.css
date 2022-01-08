@@ -85,7 +85,6 @@ footer .fa:hover {
     opacity: 0.7;
 }
 
-
 .post-line {
     border-top: 0.4rem solid #353535;
     display: block;
@@ -101,3 +100,25 @@ footer .fa:hover {
     float: right;
     /* padding: 0; */
 }
+
+.unknown-author {
+}
+
+.unknown-author-text {
+    visibility: hidden;
+    background-color: #555;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* position: absolute;     */
+    /* opacity: 0; */
+    transition: opacity 0.3s;
+    padding: 5px;
+}
+
+.unknown-author:hover .unknown-author-text {
+    visibility: visible;
+}
+
+

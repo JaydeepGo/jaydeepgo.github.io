@@ -1,0 +1,15 @@
+<div>
+    {% set quote = quotes | random %}
+        <div>
+            {{ quote.saying }}
+        </div>
+        {% if quote.author %}
+            <div>
+                - {{ quote.author }}
+            </div>
+        {% else %}
+            <div class="unknown-author">- unknown
+                <span class="unknown-author-text">I don't know the author. If you know please let me know</span>
+            </div>
+        {% endif %}
+</div>   
