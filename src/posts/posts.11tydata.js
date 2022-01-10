@@ -1,10 +1,9 @@
+const site = require('../_data/site.js');
+
 module.exports = {
   layout: 'post',
   tags: 'post',
-  permalink: 'posts/{{ title | slug }}/',
+  permalink: 'blog/{{ title | slugify }}/',
   preview: true,
-  author: 'JaydeepGo',
-  // "eleventyComputed": {
-  //     "author": `{{ site.author }}`
-  // }
+  author: site.author,
 };

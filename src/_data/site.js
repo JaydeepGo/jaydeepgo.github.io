@@ -1,7 +1,10 @@
-module.exports = function () {
-  return {
-    title: 'Jaydeep Godara',
-    author: 'JaydeepGo',
-    url: 'https://jaydeepgo.github.io',
-  };
+module.exports = {
+  title: 'Jaydeep Godara',
+  author: 'JaydeepGo',
+  url: 'https://jaydeepgo.github.io',
+  email: 'jaydeep@mail.com',
+  rss: {
+    title: 'heeee',
+    subtitle: 'I am writing about my experiences as a naval navel-gazer.',
+  },
 };

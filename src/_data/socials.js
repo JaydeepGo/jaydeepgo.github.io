@@ -15,4 +15,8 @@ module.exports = [
     link: 'mailto:jaydeep415@gmail.com',
     icon: 'fa-envelope',
   },
+  {
+    link: 'feed.xml',
+    icon: 'fa-rss',
+  },
 ];
