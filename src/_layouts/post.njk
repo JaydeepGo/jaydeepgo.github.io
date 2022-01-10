@@ -1,8 +1,6 @@
 ---
 layout: base.njk
 ---
-{% set readTime = content | wordcount/180 %}
-
 <div class="container post">
  
       <span>Written by</span>
@@ -13,6 +11,6 @@ layout: base.njk
     
     <h1 class="postTitle">{{ title }}</h1>
     <div class="post-line"></div>  
-    <div class="read-time"> {{ readTime | round(0, "ceil") }} Minute Read </div>
+    <div class="read-time"> {{ content | emojiReadTime }} </div>
     {{ content | safe }}
 </div>
