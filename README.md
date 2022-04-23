@@ -27,3 +27,5 @@ This project includes
 - https://davidea.st/articles/11ty-tips-i-wish-i-knew-from-the-start/
 - https://11ty.rocks/
 - https://jec.fyi/blog/building-my-static-site-with-11ty
+- https://whimsical.club/1/
+- https://www.learnwithjason.dev/create-a-plugin-for-11ty

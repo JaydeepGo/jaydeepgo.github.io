@@ -12,7 +12,7 @@ module.exports = [
     icon: 'fa-linkedin',
   },
   {
-    link: 'mailto:jaydeep415@gmail.com',
+    link: 'mailto:jaydeepgo.dev@gmail.com',
     icon: 'fa-envelope',
   },
   {
