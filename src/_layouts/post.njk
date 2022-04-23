@@ -1,16 +1,18 @@
 ---
 layout: base.njk
 ---
+
 <div class="container post">
- 
-      <span>Written by</span>
+    <span>Written by</span>
     {% if author %}
         {{ author }}
     {% endif %}
-    <p class="meta">on {{ date.toDateString() }} </p>
-    
+    <p class="meta">on {{ date.toDateString() }}
+    </p>
     <h1 class="postTitle">{{ title }}</h1>
-    <div class="post-line"></div>  
-    <div class="read-time"> {{ content | emojiReadTime }} </div>
+    <div class="post-line"></div>
+    <div class="read-time">
+        {{ content | emojiReadTime }}
+    </div>
     {{ content | safe }}
 </div>

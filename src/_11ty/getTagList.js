@@ -1,20 +1,15 @@
-const excludedTags = ['all', 'nav', 'post', 'posts'];
-const externalPosts = require('../_data/external-posts.js');
+const excludedTags = ['all', 'nav', 'local-post', 'posts'];
 
 module.exports = function (collection) {
   let tagSet = new Set();
-  collection.getAll().forEach(function (item) {
+  let life = collection.getFilteredByTag('posts');
+  collection.getFilteredByTag('posts').forEach(function (item) {
     if ('tags' in item.data) {
       let tags = item.data.tags.filter((item) => !excludedTags.includes(item));
 
       for (const tag of tags) {
         tagSet.add(tag);
       }
-    }
-  });
-  externalPosts.forEach((item) => {
-    for (const tag of item.tags) {
-      tagSet.add(tag);
     }
   });
 

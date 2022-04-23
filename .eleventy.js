@@ -9,11 +9,11 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter(filterName, filters[filterName]);
   });
 
-  eleventyConfig.setDataDeepMerge(false);
+  // eleventyConfig.setDataDeepMerge(false);
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(emojiReadTime, {
-    showEmoji: false,
+    showEmoji: true,
     emoji: '📕',
     label: 'mins read',
     wpm: 200,
@@ -25,9 +25,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/css');
   eleventyConfig.addPassthroughCopy('src/images');
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
-  eleventyConfig.addCollection('posts', function (collectionApi) {
-    return collectionApi.getFilteredByGlob('./src/posts/*.md');
-  });
+  eleventyConfig.addCollection(
+    'posts',
+    require('./src/_11ty/getAllPostsCollection')
+  );
 
   eleventyConfig.addCollection('tagList', require('./src/_11ty/getTagList'));
 
