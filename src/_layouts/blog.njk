@@ -30,7 +30,8 @@ layout: base.njk
           <span class="date">
             <a class="fa fa-tag"></a>
             {%- for tag in post.data.tags -%}
-              <a href="{{ "/tags/" + tag | url }}">{{ tag }}</a>
+              {% set tagUrl = "/tags/" + tag %}
+              <a href="{{ tagUrl | url }}">{{ tag }}</a>
               {% if not loop.last %},
               {% endif %}
             {%- endfor -%}
