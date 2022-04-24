@@ -10,7 +10,11 @@ permalink: /tags/{{ tag }}/
 <h1>Tagged “{{ tag }}”</h1>
 <ol>
 {% for post in collections[tag] | reverse %}
-  <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+    {% if post.data.isExternal %}
+      <li> <a href="{{ post.data.url }}" target='_blank'>{{ post.data.title }}</a> </li>
+    {% else %}
+      <li> <a href="{{ post.url | url }}">{{ post.data.title }}</a> </li>
+    {% endif %}
 {% endfor %}
 </ol>
 

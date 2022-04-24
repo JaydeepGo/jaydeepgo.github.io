@@ -9,7 +9,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter(filterName, filters[filterName]);
   });
 
-  // eleventyConfig.setDataDeepMerge(false);
+  eleventyConfig.setDataDeepMerge(false);
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(emojiReadTime, {
@@ -25,10 +25,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/css');
   eleventyConfig.addPassthroughCopy('src/images');
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
-  eleventyConfig.addCollection(
-    'posts',
-    require('./src/_11ty/getAllPostsCollection')
-  );
+  eleventyConfig.addCollection('posts', function (collectionApi) {
+    return collectionApi.getFilteredByGlob('./src/posts/*.md');
+  });
 
   eleventyConfig.addCollection('tagList', require('./src/_11ty/getTagList'));
 
