@@ -4,12 +4,12 @@ layout: base.njk
 
 <div class="container posts">
   <div class="col-sm-8">
-    {%- for post in collections.posts -%}
+    {%- for post in collections.posts | reverse -%}
       <div class="post">
         <div class="post-header">
           <h2 class="post-title">
           {% if post.data.isExternal %}
-              <a href="{{ post.url }}" target='_blank'>{{ post.data.title }}</a>
+              <a href="{{ post.data.url }}" target='_blank'>{{ post.data.title }}</a>
           {% else %}
             <a href="{{ post.url | url }}">{{ post.data.title }}</a>
           {% endif %}

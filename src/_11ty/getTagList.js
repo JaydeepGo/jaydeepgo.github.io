@@ -1,9 +1,8 @@
-const excludedTags = ['all', 'nav', 'local-post', 'posts'];
+const excludedTags = ['all', 'nav', 'post', 'posts'];
 
 module.exports = function (collection) {
   let tagSet = new Set();
-  let life = collection.getFilteredByTag('posts');
-  collection.getFilteredByTag('posts').forEach(function (item) {
+  collection.getAll().forEach(function (item) {
     if ('tags' in item.data) {
       let tags = item.data.tags.filter((item) => !excludedTags.includes(item));
 
