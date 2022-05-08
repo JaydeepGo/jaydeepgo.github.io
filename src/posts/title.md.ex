@@ -1,5 +1,7 @@
 ---
-title: "external-blog"
+title: "External-blog"
+shortDescription: ""
+summary: ""
 date: 2021-12-02
 tags:
   - life

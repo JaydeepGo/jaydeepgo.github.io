@@ -4,7 +4,7 @@
   <subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
   <link href="https://jaydeepgo.github.io/feed.xml" rel="self"/>
   <link href="https://jaydeepgo.github.io"/>
-  <updated>2021-12-02T00:00:00Z</updated>
+  <updated>2021-01-13T00:00:00Z</updated>
   <id>https://jaydeepgo.github.io</id>
   <author>
     <name>JaydeepGo</name>
@@ -16,7 +16,12 @@
     <link href="https://jaydeepgo.github.io/blog/rival-me/"/>
     <updated>2019-10-23T00:00:00Z</updated>
     <id>https://jaydeepgo.github.io/blog/rival-me/</id>
-    <content type="html">&lt;p&gt;Some Time Later.&lt;/p&gt;
+    <content type="html">&lt;figure class=&quot;&quot;&gt;
+    &lt;img src=&quot;https://jaydeepgo.github.io/images/rival-me.jpg&quot; srcset=&quot;&quot; sizes=&quot;&quot; alt=&quot;&quot; width=&quot;1846&quot; height=&quot;812&quot; /&gt;
+    &lt;figcaption class=&quot;text-center&quot;&gt;Friendly Rivalry. Photo by Marinka on &lt;a href=&quot;https://larastock.com/deposit-photo-443753128/&quot;&gt;Larastock&lt;/a&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&quot;some-time-later&quot; tabindex=&quot;-1&quot;&gt;Some Time Later&lt;/h2&gt;
 </content>
   </entry>
   
@@ -25,17 +30,13 @@
     <link href="https://jaydeepgo.github.io/blog/the-journey-of-this-blog/"/>
     <updated>2021-01-13T00:00:00Z</updated>
     <id>https://jaydeepgo.github.io/blog/the-journey-of-this-blog/</id>
-    <content type="html">&lt;p&gt;In Progress...&lt;/p&gt;
+    <content type="html">&lt;figure class=&quot;&quot;&gt;
+    &lt;img src=&quot;https://jaydeepgo.github.io/images/tree-736885.webp&quot; srcset=&quot;&quot; sizes=&quot;&quot; alt=&quot;&quot; width=&quot;1846&quot; height=&quot;812&quot; /&gt;
+    &lt;figcaption class=&quot;text-center&quot;&gt;. Photo by &lt;a href=&quot;https://pixabay.com/users/bessi-909086/&quot;&gt;Bessi&lt;/a&gt; on &lt;a href=&quot;https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-736885/&quot;&gt;Larastock&lt;/a&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;In Progress...&lt;/p&gt;
 &lt;p&gt;Life is good.&lt;/p&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>external-blog</title>
-    <link href="https://jaydeepgo.github.io/blog/external-blog/"/>
-    <updated>2021-12-02T00:00:00Z</updated>
-    <id>https://jaydeepgo.github.io/blog/external-blog/</id>
-    <content type="html">&lt;p&gt;external-blog content&lt;/p&gt;
 </content>
   </entry>
 </feed>
