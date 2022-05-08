@@ -2,6 +2,7 @@
 layout: about.njk
 eleventyNavigation:
   key: About
+  order: 1
 eleventyComputed:
   title: "{{ site.title }}"
 ---
@@ -10,7 +11,6 @@ Hi, I'm Jaydeep Godara.
 
 Salesforce Developer, Hobbiest Game Developer
 
-``` js
 I am a Salesforce Developer with 2+ years of experience in the Salesforce Service Cloud domain.
 
 - Experience in Salesforce Applications Customization and Deployment.
@@ -19,5 +19,3 @@ I am a Salesforce Developer with 2+ years of experience in the Salesforce Servic
 - Good understanding of the end to end Salesforce DevOps Process implementation and execution.
 
 *Kind of lazy so I know how to deal with problems in a simple way.*
-
-```

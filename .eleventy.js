@@ -31,6 +31,17 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection('tagList', require('./src/_11ty/getTagList'));
 
+  /* Markdown Plugins */
+  let markdownIt = require('markdown-it');
+  let markdownItAnchor = require('markdown-it-anchor');
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true,
+  };
+
+  eleventyConfig.setLibrary('md', markdownIt(options).use(markdownItAnchor));
+
   return {
     pathPrefix: '/',
     dir: {
@@ -40,7 +51,8 @@ module.exports = function (eleventyConfig) {
       includes: './_includes',
       layouts: './_layouts',
     },
-    templateFormats: ['md', 'njk'],
+    templateFormats: ['md', 'njk', 'html'],
     htmlTemplateEngine: 'njk',
+    markdownTemplateEngine: 'njk',
   };
 };
