@@ -1,11 +1,2 @@
-<link rel="stylesheet" href="{{ '/css/main.css' | url }}"/>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-    tailwind.config = {
-        theme: {},
-        darkMode: 'class'
-    }
-</script>
-<style type="text/tailwindcss">
-    @layer base { h1 { @apply text-4xl font-bold; } h2 { @apply text-2xl font-bold; } }
-</style>
+<link rel="stylesheet" href="{{ '/css/main.css?v=' | url }}{% version %}"/>
+

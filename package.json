@@ -4,10 +4,11 @@
   "description": "Jaydeep Godara profolio ",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "postcss:build": "npx postcss src/css/main.css --o docs/css/main.css",
+    "build": "npx @11ty/eleventy && npm run postcss:build",
     "postbuild": "npx prettier --write .",
     "serve": "npx @11ty/eleventy --serve",
-    "watch": "npx eleventy --watch",
+    "start": "npm run postcss:build && npm run serve",
     "debug": "DEBUG=* npx eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,7 +23,7 @@
     "autoprefixer": "^10.4.7",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.3",
-    "postcss": "^8.4.13",
+    "postcss-cli": "^9.1.0",
     "prettier": "^2.6.2",
     "tailwindcss": "^3.0.24"
   }
