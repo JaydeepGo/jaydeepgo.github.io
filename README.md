@@ -29,3 +29,4 @@ This project includes
 - https://jec.fyi/blog/building-my-static-site-with-11ty
 - https://whimsical.club/1/
 - https://www.learnwithjason.dev/create-a-plugin-for-11ty
+- https://css-tricks.com/eleventy-starter-with-tailwind-css-alpine-js/
