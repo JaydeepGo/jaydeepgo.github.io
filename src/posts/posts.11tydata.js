@@ -1,7 +1,7 @@
 const site = require('../_data/site.js');
 
 module.exports = {
-  title: 'Rival Me!',
+  title: '',
   shortDescription: '',
   summary: '',
   author: site.author,

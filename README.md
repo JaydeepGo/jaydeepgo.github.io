@@ -30,3 +30,4 @@ This project includes
 - https://whimsical.club/1/
 - https://www.learnwithjason.dev/create-a-plugin-for-11ty
 - https://css-tricks.com/eleventy-starter-with-tailwind-css-alpine-js/
+- https://nobody-codes-perfect.dev/blog/postcss-with-11ty/
