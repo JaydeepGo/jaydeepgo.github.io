@@ -4,11 +4,9 @@
   "description": "Jaydeep Godara profolio ",
   "main": "index.js",
   "scripts": {
-    "postcss:build": "npx postcss src/css/main.css --o docs/css/main.css",
-    "build": "npx @11ty/eleventy && npm run postcss:build",
+    "build": "npx @11ty/eleventy",
     "postbuild": "npx prettier --write .",
     "serve": "npx @11ty/eleventy --serve",
-    "start": "npm run postcss:build && npm run serve",
     "debug": "DEBUG=* npx eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

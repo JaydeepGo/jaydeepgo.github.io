@@ -9,8 +9,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter(filterName, filters[filterName]);
   });
 
-  // eleventyConfig.addWatchTarget('tailwind.config.js');
-  // eleventyConfig.addWatchTarget('src/css/tailwind.css');
+  eleventyConfig.addWatchTarget('tailwind.config.js');
+  eleventyConfig.addWatchTarget('postcss.config.js');
+  eleventyConfig.addWatchTarget('src/css/tailwind.css');
 
   eleventyConfig.addShortcode('version', function () {
     return String(Date.now());

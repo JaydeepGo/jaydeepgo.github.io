@@ -1,5 +1,5 @@
 const { DateTime } = require('luxon');
-const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+const { execSync } = require('child_process');
 
 module.exports = {
   htmlDateString: (dateObj) => {
@@ -10,5 +10,13 @@ module.exports = {
   },
   imagePath: (imageName) => {
     return '/images/' + imageName;
+  },
+  postcss: () => {
+    try {
+      execSync('npx postcss src/css/main.css --o docs/css/main.css');
+    } catch (error) {
+      console.log(JSON.stringify(error));
+    }
+    return 0;
   },
 };
