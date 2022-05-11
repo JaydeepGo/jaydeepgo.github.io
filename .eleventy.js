@@ -1,21 +1,24 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const emojiReadTime = require('@11tyrocks/eleventy-plugin-emoji-readtime');
 const filters = require('./src/_11ty/filters');
+const shortcodes = require('./src/_11ty/shortcodes');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function (eleventyConfig) {
+  // add filters
   Object.keys(filters).forEach((filterName) => {
     eleventyConfig.addFilter(filterName, filters[filterName]);
+  });
+
+  // add Shortcodes
+  Object.keys(shortcodes).forEach((shortcodeName) => {
+    eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
   });
 
   eleventyConfig.addWatchTarget('tailwind.config.js');
   eleventyConfig.addWatchTarget('postcss.config.js');
   eleventyConfig.addWatchTarget('src/css/tailwind.css');
-
-  eleventyConfig.addShortcode('version', function () {
-    return String(Date.now());
-  });
 
   eleventyConfig.setDataDeepMerge(false);
 
