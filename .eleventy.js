@@ -4,6 +4,7 @@ const filters = require('./src/_11ty/filters');
 const shortcodes = require('./src/_11ty/shortcodes');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const site = require('./src/_data/site.js');
 
 module.exports = function (eleventyConfig) {
   // add filters
@@ -53,7 +54,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary('md', markdownIt(options).use(markdownItAnchor));
 
   return {
-    pathPrefix: '/',
+    pathPrefix: site.pathPrefix,
     dir: {
       input: 'src',
       output: 'docs',

@@ -7,4 +7,5 @@ module.exports = {
     title: 'heeee',
     subtitle: 'I am writing about my experiences as a naval navel-gazer.',
   },
+  pathPrefix: '',
 };

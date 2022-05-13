@@ -16,25 +16,25 @@
     <link href="https://jaydeepgo.github.io/blog/rival-me/"/>
     <updated>2019-10-23T00:00:00Z</updated>
     <id>https://jaydeepgo.github.io/blog/rival-me/</id>
-    <content type="html">&lt;figure class=&quot;&quot;&gt;
-    &lt;img src=&quot;https://jaydeepgo.github.io/images/rival-me.jpg&quot; srcset=&quot;&quot; sizes=&quot;&quot; alt=&quot;&quot; width=&quot;1846&quot; height=&quot;812&quot; /&gt;
-    &lt;figcaption class=&quot;text-center&quot;&gt;Friendly Rivalry. Photo by Marinka on &lt;a href=&quot;https://larastock.com/deposit-photo-443753128/&quot;&gt;Larastock&lt;/a&gt;
+    <content type="html">&lt;figure class=&quot;w-screen max-w-screen-lg ml-[50%] -translate-x-1/2 my-12&quot;&gt;
+    &lt;img class=&quot;w-full&quot; src=&quot;https://jaydeepgo.github.io/images/rival-me.jpg&quot; srcset=&quot;&quot; sizes=&quot;&quot; alt=&quot;&quot; /&gt;
+    &lt;figcaption class=&quot;text-center my-2&quot;&gt;Friendly Rivalry. Photo by &lt;a class=&quot;border-b-2 border-black&quot; href=&quot;https://jaydeepgo.github.io/blog/rival-me/&quot;&gt;Marinka&lt;/a&gt; on &lt;a class=&quot;border-b-2 border-black&quot; href=&quot;https://larastock.com/deposit-photo-443753128/&quot;&gt;Larastock&lt;/a&gt;
     &lt;/figcaption&gt;
-&lt;/figure&gt;
+    &lt;/figure&gt;
 &lt;h2 id=&quot;some-time-later&quot; tabindex=&quot;-1&quot;&gt;Some Time Later&lt;/h2&gt;
 </content>
   </entry>
   
   <entry>
-    <title>The Journey of this blog.</title>
+    <title>The Journey of this blog</title>
     <link href="https://jaydeepgo.github.io/blog/the-journey-of-this-blog/"/>
     <updated>2021-01-13T00:00:00Z</updated>
     <id>https://jaydeepgo.github.io/blog/the-journey-of-this-blog/</id>
-    <content type="html">&lt;figure class=&quot;&quot;&gt;
-    &lt;img src=&quot;https://jaydeepgo.github.io/images/tree-736885.webp&quot; srcset=&quot;&quot; sizes=&quot;&quot; alt=&quot;&quot; width=&quot;1846&quot; height=&quot;812&quot; /&gt;
-    &lt;figcaption class=&quot;text-center&quot;&gt;. Photo by &lt;a href=&quot;https://pixabay.com/users/bessi-909086/&quot;&gt;Bessi&lt;/a&gt; on &lt;a href=&quot;https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-736885/&quot;&gt;Larastock&lt;/a&gt;
+    <content type="html">&lt;figure class=&quot;w-screen max-w-screen-lg ml-[50%] -translate-x-1/2 my-12&quot;&gt;
+    &lt;img class=&quot;w-full&quot; src=&quot;https://jaydeepgo.github.io/images/tree-736885.webp&quot; srcset=&quot;&quot; sizes=&quot;&quot; alt=&quot;&quot; /&gt;
+    &lt;figcaption class=&quot;text-center my-2&quot;&gt;. Photo by &lt;a class=&quot;border-b-2 border-black&quot; href=&quot;https://pixabay.com/users/bessi-909086/&quot;&gt;Bessi&lt;/a&gt; on &lt;a class=&quot;border-b-2 border-black&quot; href=&quot;https://pixabay.com/photos/tree-sunset-clouds-sky-silhouette-736885/&quot;&gt;pixabay&lt;/a&gt;
     &lt;/figcaption&gt;
-&lt;/figure&gt;
+    &lt;/figure&gt;
 &lt;p&gt;In Progress...&lt;/p&gt;
 &lt;p&gt;Life is good.&lt;/p&gt;
 </content>
