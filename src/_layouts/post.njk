@@ -4,13 +4,13 @@ layout: base.njk
 
 <div class="container min-h-[450px] m-auto pt-14 w-[95%] md:max-w-[55vw] post">
     <h1 class="post-title">{{ title }}</h1>
-    <p class=" post-summary">
+    <p class="text-2xl my-4 post-summary">
         {{ summary }}</p>
     <p class="byline">
         <time class="postlist-date" datetime="{{ date }}">
             {{ date | postDateString }}
         </time>
-        by {{ author }}
+        by <span class="border-b-2 border-black">{{ author }}</span>
     </p>
     {# <div class="read-time">
                 {{ content | emojiReadTime }}

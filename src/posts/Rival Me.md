@@ -8,11 +8,7 @@ preview: false
 featuredImage: rival-me.jpg
 ---
 
-<figure class="">
-    <img src="{{ featuredImage | imagePath | url }}" srcset="" sizes="" alt="" width="1846" height="812">
-    <figcaption class="text-center">Friendly Rivalry. Photo by Marinka on <a href="https://larastock.com/deposit-photo-443753128/">Larastock</a>
-    </figcaption>
-</figure>
+{% figureInsert "rival-me.jpg",  "",  "", "Friendly Rivalry", "Marinka", "", "Larastock", "https://larastock.com/deposit-photo-443753128/"  %}
 
 ## Some Time Later
 
