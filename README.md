@@ -31,3 +31,5 @@ This project includes
 - https://www.learnwithjason.dev/create-a-plugin-for-11ty
 - https://css-tricks.com/eleventy-starter-with-tailwind-css-alpine-js/
 - https://nobody-codes-perfect.dev/blog/postcss-with-11ty/
+- https://art.art/blog/how-to-structure-your-article-on-your-website-and-optimised-its-seo
+- https://stackoverflow.com/questions/62438757/how-to-make-a-link-preview-for-discord
