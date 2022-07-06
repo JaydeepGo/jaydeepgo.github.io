@@ -4,7 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>{{ title }}</title>
-        <meta name="description" content="">
+        <meta name="description" content="{{ summary }}">
         <meta name="author" content="{{ author }}">
         <link rel="image_src" href="{{ featuredImage | imagePath | url }}" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,8 +14,8 @@
         <meta property="og:type" content="website">
         <meta property="og:url" content="{{ site.url }}">
         <meta property="og:title" content="{{ title  }}">
-        <meta property="og:description" content="">
-        <meta property="og:image" content="{{ featuredImage | imagePath | url }}">
+        <meta property="og:description" content="{{ summary }}">
+        <meta property="og:image" content="{{ site.url }}{{ featuredImage | imagePath | url }}">
 
     </head>
     <body>
