@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Jaydeep Godara',
   author: 'JaydeepGo',
-  url: 'https://jaydeepgo.github.io',
+  url: 'https://jaydeepgo.com',
   email: 'jaydeep@mail.com',
   rss: {
     title: 'heeee',
