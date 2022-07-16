@@ -1,0 +1,9 @@
+---
+layout: base.njk
+---
+
+<div class="container min-h-[450px] m-auto pt-5 w-[95%] md:max-w-[55vw] posts">
+  <h1 class="pb-5">Blog</h1>
+  {% set inputPosts = collections.posts %}
+  {% include "posts.njk" %}
+</div>

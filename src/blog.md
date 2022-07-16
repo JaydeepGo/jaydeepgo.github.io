@@ -1,5 +1,5 @@
 ---
-layout: posts.njk
+layout: blog.njk
 title: Blog
 eleventyNavigation:
   key: Blog
