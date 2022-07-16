@@ -1,4 +1,5 @@
 ---
+layout: base.njk
 pagination:
   data: collections.tagList
   size: 1
@@ -6,16 +7,10 @@ pagination:
 permalink: /tags/{{ tag }}/
 ---
 
-
-<h1>Tagged “{{ tag }}”</h1>
-<ol>
-{% for post in collections[tag] | reverse %}
-    {% if post.data.isExternal %}
-      <li> <a href="{{ post.data.url }}" target='_blank'>{{ post.data.title }}</a> </li>
-    {% else %}
-      <li> <a href="{{ post.url | url }}">{{ post.data.title }}</a> </li>
-    {% endif %}
-{% endfor %}
-</ol>
+<div class="container min-h-[450px] m-auto pt-5 w-[95%] md:max-w-[55vw] posts">
+  <h1 class="pb-5">{{ tag }}</h1>
+  {% set inputPosts = collections[tag] %}
+  {% include "posts.njk" %}
+</div>
 
 
