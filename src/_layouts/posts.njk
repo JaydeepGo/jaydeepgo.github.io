@@ -22,7 +22,7 @@ layout: base.njk
       </div>
       <div class="md:row-span-full md:col-start-2 post-featuredImage">
         {% if post.data.featuredImage %}
-          <img class="w-full, h-full object-cover" src="{{ post.data.featuredImage | imagePath | url }}" alt="" sizes="(min-width: 680px) 20vw, calc(100vw - 20px)">
+          <img class="w-full" src="{{ post.data.featuredImage | imagePath | url }}" alt="" sizes="(min-width: 680px) 20vw, calc(100vw - 20px)">
           {% endif %}
         </div>
         <div class="post-footer">
