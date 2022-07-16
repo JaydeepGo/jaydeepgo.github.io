@@ -33,3 +33,4 @@ This project includes
 - https://nobody-codes-perfect.dev/blog/postcss-with-11ty/
 - https://art.art/blog/how-to-structure-your-article-on-your-website-and-optimised-its-seo
 - https://stackoverflow.com/questions/62438757/how-to-make-a-link-preview-for-discord
+- https://andrejgajdos.com/how-to-create-a-link-preview/
