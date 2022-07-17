@@ -11,4 +11,5 @@ module.exports = {
   preview: true,
   isExternal: false,
   featuredImage: '',
+  isPost: true,
 };

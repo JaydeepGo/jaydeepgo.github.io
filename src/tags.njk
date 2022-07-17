@@ -8,7 +8,7 @@ permalink: /tags/{{ tag }}/
 ---
 
 <div class="container min-h-[450px] m-auto pt-5 w-[95%] md:max-w-[55vw] posts">
-  <h1 class="pb-5">{{ tag }}</h1>
+  <h1 class="pb-5">Tag "{{ tag }}"</h1>
   {% set inputPosts = collections[tag] %}
   {% include "posts.njk" %}
 </div>
