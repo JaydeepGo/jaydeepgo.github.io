@@ -1,0 +1,32 @@
+{% if isPost %}
+  {% set summaryCx = summary %}
+  {% set authorCx = author %}
+  {% set featuredImageCx = featuredImage %}
+{% else %}
+  {% set summaryCx = site.summary %}
+  {% set authorCx = site.author %}
+  {% set featuredImageCx = site.profilePic %}
+{% endif %}
+
+<title>{{ title }}</title>
+<meta name="description" content="{{ summaryCx }}" />
+<meta name="author" content="@{{ authorCx }}" />
+<link rel="image_src" href="{{ site.url }}{{ featuredImageCx | imagePath | url }}" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:site" content="@{{ authorCx }}" />
+<meta property="og:description" content="{{ summaryCx }}" />
+<meta property="og:url" content="{{ site.url }}" />
+<meta property="og:image" content="{{ site.url }}{{ featuredImageCx | imagePath | url }}" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ title }}" />
+<meta name="twitter:site" content="@{{ authorCx }}" />
+<meta name="twitter:description" content="{{ summaryCx }}" />
+<meta name="twitter:image" content="{{ site.url }}{{ featuredImageCx | imagePath | url }}" />
+
+<!-- <meta property="article:published_time" content="2022-03-23T03:37:30+05:30">
+<meta property="article:modified_time" content="2022-07-07T00:53:30+05:30">
+
+<link rel="canonical" href="https://store.steampowered.com/news/group/39049601/view/5320445713307280739"> -->
