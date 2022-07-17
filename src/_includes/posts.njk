@@ -16,22 +16,30 @@
     </div>
     <div class="md:row-span-full md:col-start-2 post-featuredImage">
       {% if post.data.featuredImage %}
-        <img class="w-full" src="{{ post.data.featuredImage | imagePath | url }}" alt="" sizes="(min-width: 680px) 20vw, calc(100vw - 20px)">
+        {% if post.data.isExternal %}
+          <a href="{{ post.data.url }}" target='_blank'>
+            <img class="w-full" src="{{ post.data.featuredImage | imagePath | url }}" alt="" sizes="(min-width: 680px) 20vw, calc(100vw - 20px)">
+          </a>
+        {% else %}
+          <a href="{{ post.url | url }}">
+            <img class="w-full" src="{{ post.data.featuredImage | imagePath | url }}" alt="" sizes="(min-width: 680px) 20vw, calc(100vw - 20px)">
+          </a>
         {% endif %}
-      </div>
-      <div class="post-footer">
-        {% if post.data.preview %}
-          <div class="post-description">
-            {{ post.data.summary }}
-          </div>
+      {% endif %}
+    </div>
+    <div class="post-footer">
+      {% if post.data.preview %}
+        <div class="post-description">
+          {{ post.data.summary }}
+        </div>
+      {% endif %}
+      <a class="fa fa-tag"></a>
+      {%- for tag in post.data.tags -%}
+        {% set tagUrl = "/tags/" + tag %}
+        <a href="{{ tagUrl | url }}">{{ tag }}</a>
+        {% if not loop.last %},
         {% endif %}
-        <a class="fa fa-tag"></a>
-        {%- for tag in post.data.tags -%}
-          {% set tagUrl = "/tags/" + tag %}
-          <a href="{{ tagUrl | url }}">{{ tag }}</a>
-          {% if not loop.last %},
-          {% endif %}
-        {%- endfor -%}
+      {%- endfor -%}
     </div>
   </div>
 {%- endfor -%}
