@@ -15,7 +15,16 @@ eleventyComputed:
         <h2 class="text-2xl">Jaydeep Godara</h2>
         <p>Jaydeep Godara</p>
         <div class="flex  links">
-          {% include "social-icons.njk" %}
+          {%- for social in socials -%}
+            <a href="{{ social.link | url }}"  target="_blank" rel="{{ "me" if social.isExternal }} noopener noreferrer" class="mx-1 w-1/5 max-w-[36px] rounded p-2 bg-gray-700 text-white">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="{{ social.viewBox }}"
+                    aria-labelledby="{{ social.title }}TitleHeader"
+                    role="img"            >
+                    <title id="{{ social.title }}TitleHeader">{{ social.title }}</title><path fill="currentColor" d="{{ social.svg }}"/></svg>
+            </a>
+          {%- endfor -%}
         </div>
       </div>
     </div>

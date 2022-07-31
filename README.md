@@ -34,3 +34,6 @@ This project includes
 - https://art.art/blog/how-to-structure-your-article-on-your-website-and-optimised-its-seo
 - https://stackoverflow.com/questions/62438757/how-to-make-a-link-preview-for-discord
 - https://andrejgajdos.com/how-to-create-a-link-preview/
+- https://medium.com/@haxzie/dark-and-light-theme-switcher-using-css-variables-and-pure-javascript-zocada-dd0059d72fa2
+- https://sia.codes/posts/webmentions-eleventy-in-depth/
+-
