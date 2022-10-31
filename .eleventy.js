@@ -1,5 +1,4 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
-const emojiReadTime = require('@11tyrocks/eleventy-plugin-emoji-readtime');
 const filters = require('./src/_11ty/filters');
 const shortcodes = require('./src/_11ty/shortcodes');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
@@ -28,13 +27,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setDataDeepMerge(false);
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPlugin(emojiReadTime, {
-    showEmoji: true,
-    emoji: '📕',
-    label: 'mins read',
-    wpm: 200,
-    bucketSize: 3,
-  });
+
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
 
