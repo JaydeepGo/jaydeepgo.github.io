@@ -582,17 +582,21 @@ h2 {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+.border-main-light {
+  --tw-border-opacity: 1;
+  border-color: rgb(161 150 143 / var(--tw-border-opacity));
 }
-.bg-gray-700 {
+.bg-main-light {
   --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  background-color: rgb(161 150 143 / var(--tw-bg-opacity));
 }
-.bg-white {
+.bg-imp-light {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(17 81 78 / var(--tw-bg-opacity));
+}
+.bg-base-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 213 202 / var(--tw-bg-opacity));
 }
 .p-2 {
   padding: 0.5rem;
@@ -631,20 +635,24 @@ h2 {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-.font-medium {
-  font-weight: 500;
+.font-bold {
+  font-weight: 700;
 }
-.text-slate-700 {
+.text-imp-light {
   --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
+  color: rgb(17 81 78 / var(--tw-text-opacity));
 }
-.text-blue-800 {
+.text-normal-light {
   --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
+  color: rgb(254 156 155 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-text-light {
+  --tw-text-opacity: 1;
+  color: rgb(25 25 25 / var(--tw-text-opacity));
 }
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate)
@@ -658,9 +666,33 @@ h2 {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
 }
-.dark .dark\:bg-zinc-700 {
+.dark .dark\:border-main-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(3 92 158 / var(--tw-border-opacity));
+}
+.dark .dark\:bg-main-dark {
   --tw-bg-opacity: 1;
-  background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+  background-color: rgb(3 92 158 / var(--tw-bg-opacity));
+}
+.dark .dark\:bg-imp-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 54 89 / var(--tw-bg-opacity));
+}
+.dark .dark\:bg-base-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 41 107 / var(--tw-bg-opacity));
+}
+.dark .dark\:text-imp-dark {
+  --tw-text-opacity: 1;
+  color: rgb(237 54 89 / var(--tw-text-opacity));
+}
+.dark .dark\:text-normal-dark {
+  --tw-text-opacity: 1;
+  color: rgb(254 200 0 / var(--tw-text-opacity));
+}
+.dark .dark\:text-text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
   .md\:col-start-2 {
