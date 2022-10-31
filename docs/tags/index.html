@@ -30,11 +30,22 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="shortcut icon" type="image/jpg" href="/favicon.ico" />
-    <link rel="stylesheet" href="/css/main.css?v=1659291106340" />
+    <link rel="stylesheet" href="/css/main.css?v=1667236314278" />
+
+    <script>
+      if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
     <link rel="webmention" href="https://webmention.io/jaydeepgo.com/webmention" />
     <link rel="pingback" href="https://webmention.io/jaydeepgo.com/xmlrpc" />
   </head>
-  <body>
+  <body class="bg-white dark:bg-zinc-700">
     <header>
       <div class="pb-5">
         <ul class="flex justify-center items-center space-x-4">
@@ -53,9 +64,9 @@
           <h1>Tags</h1>
           <p>See more writing by topic area:</p>
 
-          <a href="/tags/general/" class="post-tag">general</a>
-
           <a href="/tags/life/" class="post-tag">life</a>
+
+          <a href="/tags/general/" class="post-tag">general</a>
         </section>
       </div>
     </main>
@@ -147,7 +158,7 @@
         </div>
         <div class="flex justify-center items-center w-full text-sm md:text-base md:w-1/2 copyright py-2 md:p-0">
           <p>Copyright @2022</p>
-          <a class="pl-4" href="eleventy" target="_blank">Powered By Eleventy </a>
+          <a class="pl-4" href="https://www.11ty.dev/" target="_blank">Powered By Eleventy </a>
         </div>
       </div>
     </footer>

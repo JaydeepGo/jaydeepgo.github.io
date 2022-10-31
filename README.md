@@ -36,4 +36,10 @@ This project includes
 - https://andrejgajdos.com/how-to-create-a-link-preview/
 - https://medium.com/@haxzie/dark-and-light-theme-switcher-using-css-variables-and-pure-javascript-zocada-dd0059d72fa2
 - https://sia.codes/posts/webmentions-eleventy-in-depth/
--
+- https://fundor333.com/post/2022/indieweb-webmention-and-h-entry-in-my-blog/
+- https://11ty.rocks/tips/env-variables/
+- https://chringel.dev/2022/07/indiewebify-me-and-dont-forget-my-webmentions/
+- https://www.jayeless.net/2021/02/integrating-webmentions-into-hugo.html
+- https://aaronparecki.com/2018/06/30/11/your-first-webmention#responses
+- https://webmention.rocks/
+- https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/

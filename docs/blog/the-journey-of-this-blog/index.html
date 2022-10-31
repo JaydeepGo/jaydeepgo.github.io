@@ -30,11 +30,22 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="shortcut icon" type="image/jpg" href="/favicon.ico" />
-    <link rel="stylesheet" href="/css/main.css?v=1659291106377" />
+    <link rel="stylesheet" href="/css/main.css?v=1667236314313" />
+
+    <script>
+      if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
     <link rel="webmention" href="https://webmention.io/jaydeepgo.com/webmention" />
     <link rel="pingback" href="https://webmention.io/jaydeepgo.com/xmlrpc" />
   </head>
-  <body>
+  <body class="bg-white dark:bg-zinc-700">
     <header>
       <div class="pb-5">
         <ul class="flex justify-center items-center space-x-4">
@@ -72,35 +83,6 @@
         <p>In Progress...</p>
         <p>Life is good.</p>
       </div>
-
-<h1>  Webmention Test</h1>
-<a href="https://webmention.rocks/test/1">Test 1</a>
-<a href="https://webmention.rocks/test/2">Test 2</a>
-<a href="https://webmention.rocks/test/3">Test 3</a>
-<a href="https://webmention.rocks/test/4">Test 4</a>
-<a href="https://webmention.rocks/test/5">Test 5</a>
-<a href="https://webmention.rocks/test/6">Test 6</a>
-<a href="https://webmention.rocks/test/7">Test 7</a>
-<a href="https://webmention.rocks/test/8">Test 8</a>
-<a href="https://webmention.rocks/test/9">Test 9</a>
-<a href="https://webmention.rocks/test/10">Test 10</a>
-<a href="https://webmention.rocks/test/11">Test 11</a>
-<a href="https://webmention.rocks/test/12">Test 12</a>
-<a href="https://webmention.rocks/test/13">Test 13</a>
-<a href="https://webmention.rocks/test/14">Test 14</a>
-<a href="https://webmention.rocks/test/15">Test 15</a>
-<a href="https://webmention.rocks/test/16">Test 16</a>
-<a href="https://webmention.rocks/test/17">Test 17</a>
-<a href="https://webmention.rocks/test/18">Test 18</a>
-<a href="https://webmention.rocks/test/19">Test 19</a>
-<a href="https://webmention.rocks/test/20">Test 20</a>
-<a href="https://webmention.rocks/test/21">Test 21</a>
-<a href="https://webmention.rocks/test/22">Test 22</a>
-<a href="https://webmention.rocks/test/23/page">Test 23</a>
-
-
-<a href="https://jaydeepgo.com">Jaydeep</a>
-
     </main>
 
     <footer class="footer">
@@ -190,7 +172,7 @@
         </div>
         <div class="flex justify-center items-center w-full text-sm md:text-base md:w-1/2 copyright py-2 md:p-0">
           <p>Copyright @2022</p>
-          <a class="pl-4" href="eleventy" target="_blank">Powered By Eleventy </a>
+          <a class="pl-4" href="https://www.11ty.dev/" target="_blank">Powered By Eleventy </a>
         </div>
       </div>
     </footer>
