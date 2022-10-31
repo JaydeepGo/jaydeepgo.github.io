@@ -1,5 +1,5 @@
 {%- for post in inputPosts | reverse -%}
-  <div class="md:grid md:grid-cols-2 md:grid-rows-2 md:auto-rows-auto border-b-8 pb-2 my-4 md:items-center  post">
+  <div class="md:grid md:grid-cols-2 md:grid-rows-2 md:auto-rows-auto border-b-8 border-main-light dark:border-main-dark pb-2 my-4 md:items-center  post">
     <div class="post-header">
       <h2 class="post-title">
         {% if post.data.isExternal %}
@@ -33,7 +33,7 @@
           {{ post.data.summary }}
         </div>
       {% endif %}
-      <a class="fa fa-tag"></a>
+      <a class="fa fa-tag text-normal-light dark:text-normal-dark"></a>
       {%- for tag in post.data.tags -%}
         {% set tagUrl = "/tags/" + tag %}
         <a href="{{ tagUrl | url }}">{{ tag }}</a>
