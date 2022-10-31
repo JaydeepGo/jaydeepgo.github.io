@@ -3,6 +3,7 @@ node_modules
 
 
 # secret data
-.evn
+.env
 
 .cache
+pub.key

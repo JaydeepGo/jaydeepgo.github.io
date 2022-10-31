@@ -30,18 +30,31 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="shortcut icon" type="image/jpg" href="/favicon.ico" />
-    <link rel="stylesheet" href="/css/main.css?v=1659291106347" />
+    <link rel="stylesheet" href="/css/main.css?v=1667259504568" />
+
+    <script>
+      if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = 'light';
+      }
+    </script>
     <link rel="webmention" href="https://webmention.io/jaydeepgo.com/webmention" />
     <link rel="pingback" href="https://webmention.io/jaydeepgo.com/xmlrpc" />
   </head>
-  <body>
+  <body class="bg-base-light dark:bg-base-dark text-text-light dark:text-text-dark">
     <header>
       <div class="pb-5">
         <ul class="flex justify-center items-center space-x-4">
-          <li class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">
+          <li class="rounded-lg px-3 py-2 mt-2 font-bold hover:bg-slate-100 hover:text-slate-900">
             <a href="/">About</a>
           </li>
-          <li class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">
+          <li class="rounded-lg px-3 py-2 mt-2 font-bold hover:bg-slate-100 hover:text-slate-900">
             <a href="/blog/">Blog</a>
           </li>
         </ul>
@@ -51,7 +64,9 @@
       <div class="container min-h-[450px] m-auto pt-5 w-[95%] md:max-w-[55vw] posts">
         <h1 class="pb-5">Tag "life"</h1>
 
-        <div class="md:grid md:grid-cols-2 md:grid-rows-2 md:auto-rows-auto border-b-8 pb-2 my-4 md:items-center post">
+        <div
+          class="md:grid md:grid-cols-2 md:grid-rows-2 md:auto-rows-auto border-b-8 border-main-light dark:border-main-dark pb-2 my-4 md:items-center post"
+        >
           <div class="post-header">
             <h2 class="post-title">
               <a href="/blog/the-journey-of-this-blog/">The Journey of this blog</a>
@@ -75,7 +90,7 @@
           <div class="post-footer">
             <div class="post-description">How this blog came to life.</div>
 
-            <a class="fa fa-tag"></a>
+            <a class="fa fa-tag text-normal-light dark:text-normal-dark"></a>
             <a href="/tags/life">life</a>
           </div>
         </div>
@@ -83,13 +98,14 @@
     </main>
 
     <footer class="footer">
-      <div class="flex flex-wrap bg-gray-500 dispay:block p-2 my-6">
+      <div class="flex flex-wrap bg-main-light dark:bg-main-dark dispay:block p-2 my-6">
+        <div class="w-full justify-center text-center py-2 newsletter">Footer Text</div>
         <div class="flex justify-center w-full md:w-1/2 py-2 links">
           <a
             href="https://twitter.com/JaydeepGo"
             target="_blank"
             rel="noopener noreferrer"
-            class="mx-1 w-1/5 max-w-[36px] rounded p-2 bg-gray-700 text-white"
+            class="mx-1 w-1/5 max-w-[36px] rounded p-2 bg-imp-light dark:bg-imp-dark text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +123,7 @@
             href="https://github.com/JaydeepGo"
             target="_blank"
             rel="noopener noreferrer"
-            class="mx-1 w-1/5 max-w-[36px] rounded p-2 bg-gray-700 text-white"
+            class="mx-1 w-1/5 max-w-[36px] rounded p-2 bg-imp-light dark:bg-imp-dark text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +141,7 @@
             href="https://www.linkedin.com/in/jaydeepgo/"
             target="_blank"
             rel="noopener noreferrer"
-            class="mx-1 w-1/5 max-w-[36px] rounded p-2 bg-gray-700 text-white"
+            class="mx-1 w-1/5 max-w-[36px] rounded p-2 bg-imp-light dark:bg-imp-dark text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +159,7 @@
             href="mailto:jaydeepgo.dev@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="mx-1 w-1/5 max-w-[36px] rounded p-2 bg-gray-700 text-white"
+            class="mx-1 w-1/5 max-w-[36px] rounded p-2 bg-imp-light dark:bg-imp-dark text-white"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="E-mailTitleHeader" role="img">
               <title id="E-mailTitleHeader">E-mail</title>
@@ -156,7 +172,7 @@
             href="/feed.xml"
             target="_blank"
             rel="noopener noreferrer"
-            class="mx-1 w-1/5 max-w-[36px] rounded p-2 bg-gray-700 text-white"
+            class="mx-1 w-1/5 max-w-[36px] rounded p-2 bg-imp-light dark:bg-imp-dark text-white"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="FeedTitleHeader" role="img">
               <title id="FeedTitleHeader">Feed</title>
@@ -169,7 +185,7 @@
         </div>
         <div class="flex justify-center items-center w-full text-sm md:text-base md:w-1/2 copyright py-2 md:p-0">
           <p>Copyright @2022</p>
-          <a class="pl-4" href="eleventy" target="_blank">Powered By Eleventy </a>
+          <a class="pl-4" href="https://www.11ty.dev/" target="_blank">Powered By Eleventy </a>
         </div>
       </div>
     </footer>
