@@ -590,6 +590,10 @@ h2 {
   --tw-bg-opacity: 1;
   background-color: rgb(161 150 143 / var(--tw-bg-opacity));
 }
+.bg-normal-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 156 155 / var(--tw-bg-opacity));
+}
 .bg-imp-light {
   --tw-bg-opacity: 1;
   background-color: rgb(17 81 78 / var(--tw-bg-opacity));
@@ -600,6 +604,9 @@ h2 {
 }
 .p-2 {
   padding: 0.5rem;
+}
+.p-1 {
+  padding: 0.25rem;
 }
 .py-2 {
   padding-top: 0.5rem;
@@ -673,6 +680,10 @@ h2 {
 .dark .dark\:bg-main-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(3 92 158 / var(--tw-bg-opacity));
+}
+.dark .dark\:bg-normal-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 200 0 / var(--tw-bg-opacity));
 }
 .dark .dark\:bg-imp-dark {
   --tw-bg-opacity: 1;

@@ -27,7 +27,7 @@
         {% endif %}
       {% endif %}
     </div>
-    <div class="post-footer">
+    <div class="post-footer mt-2">
       {% if post.data.preview %}
         <div class="post-description">
           {{ post.data.summary }}
@@ -36,10 +36,8 @@
       <a class="fa fa-tag text-normal-light dark:text-normal-dark"></a>
       {%- for tag in post.data.tags -%}
         {% set tagUrl = "/tags/" + tag %}
-        <a href="{{ tagUrl | url }}">{{ tag }}</a>
-        {% if not loop.last %},
-        {% endif %}
-      {%- endfor -%}
+        <a class="rounded p-1 bg-normal-light dark:bg-normal-dark" href="{{ tagUrl | url }}">{{ tag }}</a>
+       {%- endfor -%}
     </div>
   </div>
 {%- endfor -%}
