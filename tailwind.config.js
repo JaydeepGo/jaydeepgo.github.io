@@ -20,7 +20,7 @@ module.exports = {
         },
         normal: {
           light: '#FE9C9B',
-          dark: '#FEC800',
+          dark: '#FE9600',
         },
         rest: {
           light: '#FFFFFF',
