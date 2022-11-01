@@ -683,7 +683,7 @@ h2 {
 }
 .dark .dark\:bg-normal-dark {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 200 0 / var(--tw-bg-opacity));
+  background-color: rgb(254 150 0 / var(--tw-bg-opacity));
 }
 .dark .dark\:bg-imp-dark {
   --tw-bg-opacity: 1;
@@ -699,7 +699,7 @@ h2 {
 }
 .dark .dark\:text-normal-dark {
   --tw-text-opacity: 1;
-  color: rgb(254 200 0 / var(--tw-text-opacity));
+  color: rgb(254 150 0 / var(--tw-text-opacity));
 }
 .dark .dark\:text-text-dark {
   --tw-text-opacity: 1;
